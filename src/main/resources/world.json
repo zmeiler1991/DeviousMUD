@@ -1,0 +1,68 @@
+{
+  "worldName": "The Shattered Sigil",
+  "zones": [
+    {
+      "id": "varrock",
+      "name": "Varrock",
+      "description": "A crumbling town built atop dimensional fault lines.",
+      "rooms": [
+        {
+          "id": "varrock_square",
+          "name": "Varrock Square",
+          "description": "The cobbled square pulses with unstable energy. A rift flickers in the distance.",
+          "npcs": ["shopkeeper", "wanderer"],
+          "items": ["ancient_coin", "scroll_fragment"],
+          "exits": {
+            "north": "varrock_tower",
+            "west": "western_forest"
+          }
+        },
+        {
+          "id": "varrock_tower",
+          "name": "Tower of Echoes",
+          "description": "Runes float mid-air. You feel time shift with each breath.",
+          "npcs": ["rune_keeper"],
+          "items": ["rune_crystal"],
+          "exits": {
+            "south": "varrock_square"
+          }
+        }
+      ]
+    },
+    {
+      "id": "western_forest",
+      "name": "Western Forest",
+      "description": "Dark trees whisper forgotten languages. Eyes watch from the shadows.",
+      "rooms": [
+        {
+          "id": "forest_edge",
+          "name": "Forest Edge",
+          "description": "The edge of the forest is still, but tension hangs thick.",
+          "npcs": ["wolf"],
+          "items": ["broken_sword"],
+          "exits": {
+            "east": "varrock_square",
+            "west": "marcus_pasture"
+          }
+        }
+      ]
+    },
+    {
+      "id": "marcus_pasture",
+      "name": "Marcus's Pasture",
+      "description": "Marcus herds sheep. Something stirs beneath the soil.",
+      "rooms": [
+        {
+          "id": "pasture_field",
+          "name": "Pasture Field",
+          "description": "Sheep graze nervously. Marcus watches 'The Thing' move underfoot.",
+          "npcs": ["marcus", "sheep"],
+          "items": ["wool", "mysterious_key"],
+          "exits": {
+            "east": "forest_edge"
+          }
+        }
+      ]
+    }
+  ]
+}
