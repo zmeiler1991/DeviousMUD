@@ -1,0 +1,4 @@
+tasks:
+  - name: Build and Run
+    init: mvn clean package
+    command: java -cp target/classes com.deviousmud.Main
